@@ -40,7 +40,19 @@ header {
 }
 
 #map {
-    width: 100%;
-    height: 275px;
+    width: 555px;
+    height: 150px;
+    object-fit: cover;
+}
 
+.imgFit{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.resturantFit{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
