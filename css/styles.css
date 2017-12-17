@@ -1,25 +1,40 @@
-.textCenter{
+.textCenter {
     text-align: center;
-
-
 }
 
-header{
-    background-color: red;
+header {
+    background-color: #391D18;
     padding-bottom: 200px;
     height: 275px;
 }
 
-.color1{
-    background-color: blue;
+.color1 {
+    background-color: #F8F8F8;
     padding: 15px 0px;
-    height: 275px;
-
+    height: 400px;
 }
-.color2{
-    background-color: green;
+
+.color2 {
+    background-color: #EBEBEB;
     padding: 15px 0px;
+    height: 400px;
+}
+
+.sectionOne {
+    background-color: white;
+    padding: 5px;
+    height: 300px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #DFDFDF;
+}
+
+.sectionTwo {
+    background-color: white;
     height: 275px;
-
-
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 3px;
+    border: 1px solid #DFDFDF;
 }
