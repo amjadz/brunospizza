@@ -70,7 +70,10 @@
           </div>
           
           <div class="col-md-6">
-            <div id ="map"></div>
+            <div class="sectionTwo">
+              <div id ="map"></div>
+
+            </div>
            </div>
           
         </div>
@@ -82,6 +85,43 @@
   </section>
 
 </body>
-<script src="script.js"></script>
+
+<script>
+  function initMap() {
+    var bruno = {lat: 46.142984, lng: -122.931434};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: bruno
+    });
+
+    var marker = new google.maps.Marker({
+      position: bruno,
+      map: map
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails({
+          placeId: 'ChIJQfkFqJNslFQR62ZoIUO6zHo'
+        }, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+              map: map,
+              position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                place.formatted_address + '</div>');
+              infowindow.open(map, this);
+            });
+          }
+        });
+
+  }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeqllUe8E8Cu9zCLT1amtEUqOB2BRTJ8s&callback=initMap&libraries=places"></script>
+
 
 </html>
