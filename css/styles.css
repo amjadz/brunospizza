@@ -1,1 +1,25 @@
+.textCenter{
+    text-align: center;
 
+
+}
+
+header{
+    background-color: red;
+    padding-bottom: 200px;
+    height: 275px;
+}
+
+.color1{
+    background-color: blue;
+    padding: 15px 0px;
+    height: 275px;
+
+}
+.color2{
+    background-color: green;
+    padding: 15px 0px;
+    height: 275px;
+
+
+}
