@@ -3,21 +3,23 @@
 }
 
 header {
-    background-color: #391D18;
-    padding-bottom: 200px;
-    height: 275px;
+    height: 500px;
+    background-image: url("../img/banner.PNG");
+    background-size: cover;
+    background-position: right;
+    padding-top: 150px;
 }
 
 .color1 {
-    background-color: #F8F8F8;
+    background-color: #ffdead;
     padding: 15px 0px;
-    height: 400px;
+    height: 500px;
 }
 
 .color2 {
     background-color: #EBEBEB;
     padding: 15px 0px;
-    height: 400px;
+    height: 500px;
 }
 
 .sectionOne {
@@ -35,7 +37,7 @@ header {
     height: 300px;
     margin-bottom: 15px;
     text-align: left;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #DFDFDF;
 }
 
@@ -45,26 +47,33 @@ header {
     object-fit: cover;
 }
 
-.imgFit{
+.imgFit {
     height: 150px;
     width: 100%;
+    border-radius: 5px;
     object-fit: cover;
 }
 
-.resturantFit{
-    width: 100%;
-    height: 150px;
+.resturantFit {
+    width: 555px;
+    height: 299px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 a:hover {
     text-decoration: none;
-
-
 }
 
 .sectionText {
     padding-left: 10px;
+}
 
-
+footer {
+    background-color: #391D18;
+    padding: 15px;
+    height: 350px;
+    margin-bottom: 0px;
+    color: #EEEEEE;
+    padding: 50px;
 }
