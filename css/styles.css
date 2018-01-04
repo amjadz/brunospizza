@@ -108,3 +108,14 @@ a:hover {
     color: white;
 
 }
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+
+}
