@@ -1,12 +1,13 @@
 .textCenter {
     text-align: center;
+    padding-bottom: 30px;
 }
 
-header {
+.header {
     height: 500px;
     background-image: url("../img/banner.PNG");
     background-size: cover;
-    background-position: right;
+    background-position: center;
     padding-top: 150px;
 }
 
@@ -69,11 +70,41 @@ a:hover {
     padding-left: 10px;
 }
 
-footer {
+.center{
+    text-align: center;
+    
+}
+
+.footer {
     background-color: #391D18;
     padding: 15px;
     height: 350px;
     margin-bottom: 0px;
     color: #EEEEEE;
     padding: 50px;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 30px;
+}
+
+.topnav a:hover {
+    background-color: #DFDFDF;
+    color: black;
+
+}
+
+.topnav a.active {
+    background-color: #4caf50;
+    color: white;
+
 }
